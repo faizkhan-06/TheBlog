@@ -7,9 +7,9 @@ export default {
         Poppins: ["Poppins "],
         SFProDisplay: ["SF Pro Display"],
       },
-      backgroundImage: {
-        "bg-cosmic":
-          "url(assets/images/cosmic-background-with-colorful-laser-lights.jpg)",
+      boxShadow: {
+        "light-on-dark": "0 4px 6px rgba(255, 255, 255, 0.1)", // Lighter shadow for dark backgrounds
+        "soft-light-on-dark": "0 2px 4px rgba(255, 255, 255, 0.05)",
       },
     },
   },
