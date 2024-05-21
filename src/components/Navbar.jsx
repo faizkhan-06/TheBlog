@@ -5,10 +5,12 @@ import { FiSearch } from "react-icons/fi";
 import { IoIosSettings } from "react-icons/io";
 import { FaRegUserCircle } from "react-icons/fa";
 import Signin from "../pages/Signin";
+import { IoMenu } from "react-icons/io5";
 
 function Navbar() {
   const [isLogin, setIsLogin] = useState(false);
   const [isFormVisible, setIsFormVisible] = useState(false);
+  const [isMenu, setIsMenu] = useState(false);
   const closeForm = () => setIsFormVisible(false);
   const openForm = () => setIsFormVisible(true);
   return (
@@ -75,6 +77,7 @@ function Navbar() {
           </div>
         </div>
       )}
+
       {isFormVisible && <Signin closeForm={closeForm} />}
     </>
   );
